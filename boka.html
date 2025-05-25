@@ -4,11 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bellwood Hotel - Kontakta oss</title>
+    <title>Bellwood Hotel - Boka rum</title>
     <meta name="description"
-        content="Kontakta Bellwood Hotel för frågor, bokningar eller support. Vi finns här för att hjälpa dig med din vistelse.">
+        content="Boka ditt rum på Bellwood Hotel enkelt och snabbt. Välj rumstyp och fyll i dina uppgifter – vi ser fram emot att välkomna dig!">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="grid-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -19,15 +24,15 @@
     </header>
     <nav class="topnav" id="myTopnav">
         <a href="index.html">Start</a>
-        <a href="boka.html">Boka</a>
+        <a href="boka.html" class="active">Boka</a>
         <a href="hitta.html">Hitta</a>
-        <a href="kontakta.html" class="active">Kontakta</a>
+        <a href="kontakta.html">Kontakta</a>
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </nav>
     <section>
-        <h2>Kontakta oss</h2>
+        <h2>Boka rum</h2>
         <div class="container">
-            <form action="tack-sent.html">
+            <form action="tack.html">
                 <div class="row">
                     <div class="col-25">
                         <label for="fname">Förnamn</label>
@@ -62,22 +67,41 @@
                 </div>
                 <div class="row">
                     <div class="col-25">
-                        <label for="subject">Meddelande</label>
+                        <label>Rumstyp</label>
                     </div>
                     <div class="col-75">
-                        <textarea name="subject" id="subject" placeholder="Skriv meddelande..."
+                        <select name="typeroom" id="typeroom">
+                            <option value="enkel">Enkelrum</option>
+                            <option value="dubbel">Dubbelrum</option>
+                            <option value="suit">Suit</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Övrigt</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea name="subject" id="subject" placeholder="Övrig info..."
                             style="height: 200px;"></textarea>
                     </div>
                 </div>
                 <div class="row">
-                    <input type="submit" value="Send">
+                    <input type="submit" value="submit">
                 </div>
             </form>
         </div>
     </section>
     <aside>
-        <p>support@skibidi.se</p>
-        <p>Vår telefonnummer: 08 - 40 90 68 90</p>
+        <ul>
+            <li>
+                Cras in nunc libero. In rhoncus tincidunt dolor ac tempor.
+            </li>
+            <li>
+                Mauris at aliquet felis. Quisque eget auctor mi. Mauris nisl diam, porttitor sed pulvinar sed,
+                euismod eget enim. Morbi tincidunt nunc commodo sodales tincidunt.
+            </li>
+        </ul>
     </aside>
     <footer>
         <p>Hotel Bellwood | 90 Nugaliyadda Rd | Moragalla 20204 | 012 - 12 34 56</p>
